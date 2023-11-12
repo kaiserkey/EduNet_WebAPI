@@ -1,0 +1,43 @@
+@startuml
+
+left to right direction
+
+actor "Administrador" as Admin
+actor "Usuario" as User
+actor "Docente" as Docente
+
+rectangle "Casos de Uso" {
+  usecase "(UC001) Registrar Estudiante" as UC001
+  usecase "(UC002) Consultar Estudiante" as UC002
+  usecase "(UC003) Gestionar Aulas" as UC003
+  usecase "(UC004) Enviar Notificaciones" as UC004
+  usecase "(UC005) Gestionar Inscripciones de Alumnos" as UC005
+  usecase "(UC006) Gestionar Docentes" as UC006
+  usecase "(UC007) Administrar Calificaciones" as UC007
+  usecase "(UC008) Comunicar con Padres" as UC008
+  usecase "(UC009) Loguear" as UC009
+  usecase "(UC010) Registrar Nuevo Usuario" as UC010
+}
+
+Admin --|> UC001
+User --|> UC001
+Admin --|> UC002
+User --|> UC002
+Admin --|> UC003
+Admin --|> UC004
+Docente --|> UC004
+Admin --|> UC005
+Admin --|> UC006
+Docente --|> UC007
+Admin --|> UC008
+Docente --|> UC008
+Admin --|> UC009
+User --|> UC009
+Docente --|> UC009
+Admin --|> UC010
+
+UC001 --> UC005 : <<extends>>
+UC002 --> UC007 : <<includes>>
+UC004 --> UC008 : <<includes>>
+
+@enduml

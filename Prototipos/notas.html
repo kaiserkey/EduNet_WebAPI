@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Notas - Centro Educativo EduNet</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Gris claro */
+            color: #333; /* Texto oscuro */
+        }
+
+        #notas-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff; /* Blanco */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #3498db; /* Azul suave */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* Gris claro */
+        }
+
+        th {
+            background-color: #3498db; /* Azul suave */
+            color: #fff;
+        }
+
+        input {
+            width: 60px;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Gris claro */
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #2ecc71; /* Verde suave */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div id="notas-container">
+        <h1>Administración de Notas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estudiante</th>
+                    <th>Materia</th>
+                    <th>Cuatrimestre</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estudiante 1</td>
+                    <td>Matemáticas</td>
+                    <td>Cuatrimestre 1</td>
+                    <td><input type="number" value="90"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button>Guardar</button>
+    </div>
+</body>
+</html>

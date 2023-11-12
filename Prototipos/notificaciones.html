@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación con Padres - Centro Educativo EduNet</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Gris claro */
+            color: #333; /* Texto oscuro */
+        }
+
+        #comunicacion-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff; /* Blanco */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #3498db; /* Azul suave */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Gris claro */
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Gris claro */
+            border-radius: 4px;
+            background-color: #fff; /* Blanco */
+        }
+
+        button {
+            background-color: #2ecc71; /* Verde suave */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div id="comunicacion-container">
+        <h1>Comunicación con Padres</h1>
+        <form action="#" method="post">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <label for="destinatarios">Seleccionar Destinatarios:</label>
+            <select id="destinatarios" name="destinatarios" multiple>
+                <option value="padre1">Padre 1</option>
+                <option value="padre2">Padre 2</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
